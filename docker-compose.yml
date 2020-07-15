@@ -1,0 +1,35 @@
+version: "3"
+
+volumes:
+  cc_docs:
+    driver: local
+  mysql:
+    driver: local
+
+services:
+ mysql:
+   restart: always
+   image: mysql:5.7
+   environment:
+     MYSQL_ROOT_PASSWORD: "terriblepassword"
+     MYSQL_DATABASE: "cliniccases"
+     MYSQL_USER: "cliniccases"
+     MYSQL_PASSWORD: "terriblepassword"
+   volumes:
+     - mysql:/var/lib/mysql
+   ports:
+     - "3306:3306"
+
+ web:
+   restart: always
+   build:
+      context: .
+      dockerfile: ./dockerfiles/cliniccases/Dockerfile
+   links:
+     - mysql:mysql
+   ports:
+     - "8000:80"
+   volumes:
+     - cc_docs:/var/cc_docs
+   cap_add:
+     - SYS_PTRACE
