@@ -4,7 +4,7 @@
 
 * docker-compose up
 
-* Head to (http://localhost:8000/_INSTALL)[http://localhost:8000/_INSTALL]
+* Head to [http://localhost:8000/_INSTALL](http://localhost:8000/_INSTALL)
 
 * Fill out the form, these values are also specified in `_CONFIG.php`
 
@@ -25,7 +25,7 @@ Default Email: cliniccases@example.com
 
 * Click Submit
 
-* Head to (http://localhost:8000)[http://localhost:8000]
+* Head to [http://localhost:8000](http://localhost:8000)
 
 * Log in with admin:admin
 
