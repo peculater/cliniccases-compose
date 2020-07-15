@@ -47,7 +47,7 @@ define("CC_SCHOOL_COLOR","#000000");
 define("ALLOWED_FILE_TYPES", serialize(array('doc','docx','odt','rtf','txt','wpd','xls','ods','csv','mp3','wav','ogg','aif','aiff','mpeg','avi','mp4','mpg','mov','qt','ovg','webm','ogv','flv','bmp','jpg','jpeg','gif','png','svg','tif','tiff','zip','tar','gz','bz','pdf')));
 
 //Define constants for sending email notifications
-define("CC_EMAIL_FROM","no-reply@example.com");  //e.g. no-reply@yourserver.com
+define("CC_EMAIL_FROM","cliniccases@example.com");  //e.g. no-reply@yourserver.com
 
 define("CC_EMAIL_HEADERS","From: " . CC_EMAIL_FROM . "\n" . "Reply-To: " . CC_EMAIL_FROM . "\n" . "X-Mailer: PHP/" . phpversion());
 
