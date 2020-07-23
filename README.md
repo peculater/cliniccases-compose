@@ -12,7 +12,7 @@
 Host: mysql
 Database Username: cliniccases
 Database Password: terriblepassword
-Database Name: cliccases
+Database Name: cliniccases
 Password Salt (leave alone)
 Path to ClinicCases: /var/www/html
 Path to Documents: /var/cc_docs
